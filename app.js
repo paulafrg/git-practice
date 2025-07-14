@@ -1,9 +1,18 @@
-alert('Welcome to our Secret Number game!');
-let maxNumber = 5000;
+function showText(tag, text) {
+    let space = document.querySelector(tag);
+    space.innerHTML = text;
+}
+
+showText('h1', 'Welcome to our Game!');
+showText('h2', 'Try to discover the Secret Number');
+
+let maxNumber = 10;
 let secretNumber = parseInt(Math.random() * maxNumber+1);
 console.log(secretNumber);
 let guess;
 let tries = 1;
+
+
 
 // enquanto / while guessed number is different to the s.n.
 while(guess !=secretNumber) {
