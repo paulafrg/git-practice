@@ -6,7 +6,7 @@ function showText(tag, text) {
 showText('h1', 'Welcome to our Game!');
 showText('h2', 'Try to discover the Secret Number');
 
-let maxNumber = 15;
+let maxNumber = 20;
 let secretNumber = parseInt(Math.random() * maxNumber+1);
 console.log(secretNumber);
 let guess;
